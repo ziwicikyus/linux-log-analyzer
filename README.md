@@ -1,5 +1,8 @@
 # Linux Log Analyzer v0.1
 
+## status
+Early development (v0.1.8)
+
 # Python based tool for analyzing linux logs and detecting potencial brute force attacks.
  'I added some stuff on log file to make sure that the script can actually reads the file and gives me the outputr that i seek.'
 
