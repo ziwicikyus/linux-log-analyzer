@@ -1,6 +1,6 @@
 # Linux Log Analyzer v0.2
 
-## status
+## Status
 Early development (v0.2)
 
 # A simple and practical python based CLI tool for analyzing Linux log files and detecting potencial brute force attacks.
@@ -37,7 +37,7 @@ Early development (v0.2)
 - view all log entries if fail filter is not applied (v0.2)
 
 
-if there is no such a log file, it automaticly warns the user.
+if there is no such a log file, it automaticaly warns the user.
 
 # Usage
 
