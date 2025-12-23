@@ -1,54 +1,22 @@
-# Linux Log Analyzer
+# Linux Log Analyzer v0.1
 
-A Python-based tool for analyzing Linux authentication logs to detect failed login attempts and potential brute force attacks.
+Python based tool for analyzing linux logs and detecting potencial brute force attacks.
 
- Purpose
-This project was created to gain experience with:
-- Log analysis
-- Basic detection logic
-- Blue team / SOC-style thinking
+# i added some stuff on log file to make sure that the script can actually reads the log file and gives me the outputr that i seek.
 
-In this first v0.1 realese, my main focus was on the script if it actually can read the files and gives the output that I seek for.
+Purpose
+I created this tool for gaining experience in log analysis, basic detection logic and being familiar with SOC style.
 
- Features
-- Parses Linux auth.log files
-- Detects failed SSH login attempts
-- Counts attempts per IP address
-- Flags suspicious IPs based on a configurable threshold
-- Exports results to a CSV report
+Features
+detects how many log attempts have exists.
+if there is no such a log file it automaticly warns the user.
 
- Project Structure
-linux-log-analyzer/
-├── analyzer.py
-├── logs/
-│ └── auth.log
-├── failed_login_report.csv
-└── README.md
+Usage
+be sure that the log file is in the wright location.
+run the script:D
 
- How It Works
-1. Reads authentication logs line by line
-2. Identifies failed login entries
-3. Extracts source IP addresses
-4. Counts repeated attempts
-5. Flags IPs exceeding the defined threshold
-6. Generates a CSV report for further analysis
 
-CSV report:
-- IP Address
-- Failed Attempts
-- Alert status (YES / NO)
 
-  What I Learned
-- How authentication failures appear in real logs
-- Basic brute force detection logic
-- Turning raw log data into actionable reports
-- Thinking like a SOC analyst rather than just writing scripts
 
- Possible Improvements
-- Time-based analysis (night-time activity detection)
-- Username-based correlation
-- Integration with real SIEM tools
-- Automated blocking (Fail2Ban-style logic)
 
- Disclaimer
-This project is for educational purposes only and was tested in a controlled environment.
+
