@@ -28,7 +28,7 @@ Early development (v0.2)
 
 
 
-Features
+# Features
 
 - detects how many log attempts have exists. (v0.1)
 - select the log file via CLI (`--file`) (v0.2)
@@ -39,7 +39,7 @@ Features
 
 if there is no such a log file, it automaticly warns the user.
 
-Usage
+# Usage
 
 *make sure u delete the example logs that i have wrote on the log file before u actually use the tool. They are only examples and not for real use*
 
@@ -51,25 +51,31 @@ Linux: Terminal
 
 
 
+
 View all log entries:
 
 python analyzer.py --file /path/to/logfile.log
 
+--------------------------------------------------------------
 
 View only failed log entries + total fail count: 
 
 python analyzer.py --file /path/to/logfile.log --failed-only
 
+--------------------------------------------------------------
 
 Windows path example:
 
 & C:/Users/user/AppData/Local/Programs/Python/Python314/python.exe C:/Users/user/Desktop/linux-log-analyzer/analyzer.py --file C:/Users/user/Desktop/linux-log-analyzer/logs/auth.log --failed-only
 
 
+---------------------------------------------------------------
+
+
+# Output Example – Fail Only
 
 
 
-Output Example – Fail Only
 [FAILED] Failed password for root from 192.168.1.10
 [FAILED] Failed password for admin from 192.168.1.11
 
@@ -79,18 +85,7 @@ Total failed login attempts: 2
 
 
 
-Output Example – All Log Entries
-Line1
-Line2
-[FAILED] Failed password for root from 192.168.1.10
-Line4
-...
-
-Total lines output: X
-
-
-
-Purpose
+# Purpose
 
 
 I created this tool for gaining experience in log analysis, basic detection logic and being familiar with SOC style thinking.
